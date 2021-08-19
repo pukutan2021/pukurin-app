@@ -1,5 +1,5 @@
 .header {
-  background-color: lightgreen;
+  background-color: rgb(201, 250, 186);
   height: 70px;
   padding: 0 20px;
   display: flex;
@@ -50,12 +50,12 @@ form textarea {
   width: 100%;
   margin: 5px 0 15px;
   padding: 10px;
-  border: 1px solid #D8D8D8;
+  border: 1px solid darkgreen;
   border-radius: 5px;
   font-family: "游ゴシック", "YuGothic";
 }
 form input[type="submit"] {
-  width: 40%;
+  width: 60%;
   background-color: darkgreen;
   margin: 0 auto;
   border-radius: 20px;
