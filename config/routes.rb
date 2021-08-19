@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get 'cards/index'
   root to: "cards#index"
   resources :users, only: [:edit, :update]
+  resources :cards, only: [:index, :create, :destroy]
 end
