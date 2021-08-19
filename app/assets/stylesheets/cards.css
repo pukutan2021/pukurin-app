@@ -1,11 +1,17 @@
 .header {
-  background-color: #FFF;
-  height: 100px;
-  margin-bottom: 40px;
-  padding: 10px 40px;
+  background-color: lightgreen;
+  height: 70px;
+  padding: 0 20px;
   display: flex;
   justify-content: space-between;
 }
+.inner {
+  width: 200px;
+  font-size: 22px;
+  text-align: center;
+  padding: 15px 0 0 0;
+}
+
 .wrapper {
   display: flex;
 }
@@ -17,6 +23,7 @@
 .main-card {
   background-color: #FFF;
   width: calc(100vw - 200px);
+  margin-left: 40px;
 }
 .card__wrapper {
   display: flex;
@@ -32,11 +39,11 @@
   margin-bottom: 20px;
 }
 .card__title {
-  font-size: 28px;
+  font-size: 20px;
   margin-bottom: 8px;
 }
 .card__summary {
-  font-size: 20px;
+  font-size: 17px;
 }
 form input,
 form textarea {
