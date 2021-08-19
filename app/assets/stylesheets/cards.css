@@ -32,7 +32,7 @@
 }
 .side-bar {
   background-color: darkgreen;
-  width: 200px;
+  width: 300px;
   height: 100vh;
 }
 .side-bar-header {
@@ -53,11 +53,14 @@
 }
 .main-card {
   background-color: #FFF;
-  width: calc(100vw - 200px);
+  height: calc(100vh - 100px - 70px);
+  width: calc(100vw - 300px);
   margin-left: 40px;
 }
 .page-heading {
   color: darkgreen;
+  font-size: 30px;
+  margin-bottom: 30px;
 }
 .card__wrapper {
   display: flex;
@@ -102,7 +105,7 @@ form input[type="submit"]:hover {
 }
 .form {
   background-color: #DDDDDD;
-  height: 90px;
+  height: 100px;
   padding: 20px 40px;
   display: flex;
 }
