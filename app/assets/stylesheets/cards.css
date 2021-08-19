@@ -4,14 +4,29 @@
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 .inner {
   width: 200px;
   font-size: 22px;
   text-align: center;
-  padding: 15px 0 0 0;
+  float: left;
 }
-
+.user_nav {
+  padding: 5px 10px;
+  display: block;
+}
+.user_nav a {
+  text-decoration: none;
+  font-size: 15px;
+  border: 2px solid #253141;
+  border-radius: 3px;
+  color: #253141;
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+}
 .wrapper {
   display: flex;
 }
@@ -25,14 +40,14 @@
   padding: 0 20px;
   background-color: #253141;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 .rooms{
   height: calc(100vh - 100px);
 }
 .header-name a {
-  font-size: 16px;
+  font-size: 20px;
   color: #FAFAFA;
   text-decoration: none;
 }
@@ -40,6 +55,9 @@
   background-color: #FFF;
   width: calc(100vw - 200px);
   margin-left: 40px;
+}
+.page-heading {
+  color: darkgreen;
 }
 .card__wrapper {
   display: flex;
@@ -55,11 +73,11 @@
   margin-bottom: 20px;
 }
 .card__title {
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 8px;
 }
 .card__summary {
-  font-size: 17px;
+  font-size: 15px;
 }
 form input,
 form textarea {

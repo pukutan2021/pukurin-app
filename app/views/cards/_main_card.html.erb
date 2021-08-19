@@ -1,8 +1,8 @@
 <div class="card__top">
-  <h1 class="page-heading">写真一覧</h1>
+  <h2 class="page-heading">写真一覧</h2>
   <div class="card__wrapper">
     <div class="card">
-      <%= image_tag card.image.variant(resize: '120x120'), class: 'card-image' %>
+      <%= image_tag @card.image.variant(resize: '120x120'), class: 'card-image' if @card.image.attached? %>
       <div class="card__body">
         <h2 class="card__title">タイトル</h2>
         <p class="card__summary">
@@ -11,7 +11,7 @@
       </div>
     </div>
     <div class="card">
-      <%= image_tag card.image.variant(resize: '120x120'), class: 'card-image' %>
+      <%= image_tag card.image.variant(resize: '120x120'), class: 'card-image' if @card.image.attached? %>
       <div class="card__body">
         <h2 class="card__title">タイトル</h2>
         <p class="card__summary">
@@ -20,7 +20,7 @@
       </div>
     </div>
     <div class="card">
-      <%= image_tag card.image.variant(resize: '120x120'), class: 'card-image' %>
+      <%= image_tag card.image.variant(resize: '120x120'), class: 'card-image' if @card.image.attached? %>
       <div class="card__body">
         <h2 class="card__title">タイトル</h2>
         <p class="card__summary">
@@ -29,7 +29,7 @@
       </div>
     </div>
     <div class="card">
-      <%= image_tag card.image.variant(resize: '120x120'), class: 'card-image' %>
+      <%= image_tag card.image.variant(resize: '120x120'), class: 'card-image' if @card.image.attached? %>
       <div class="card__body">
         <h2 class="card__title">タイトル</h2>
         <p class="card__summary">
@@ -38,7 +38,7 @@
       </div>
     </div>
     <div class="card">
-      <%= image_tag card.image.variant(resize: '120x120'), class: 'card-image' %>
+      <%= image_tag card.image.variant(resize: '120x120'), class: 'card-image' if @card.image.attached? %>
       <div class="card__body">
         <h2 class="card__title">タイトル</h2>
         <p class="card__summary">
@@ -47,7 +47,7 @@
       </div>
     </div>
     <div class="card">
-      <%= image_tag card.image.variant(resize: '120x120'), class: 'card-image' %>
+      <%= image_tag card.image.variant(resize: '120x120'), class: 'card-image' if @card.image.attached? %>
       <div class="card__body">
         <h2 class="card__title">タイトル</h2>
         <p class="card__summary">
