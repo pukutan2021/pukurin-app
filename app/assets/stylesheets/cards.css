@@ -1,5 +1,5 @@
 .header {
-  background-color: rgb(201, 250, 186);
+  background-color: rgb(140, 221, 48);
   height: 70px;
   padding: 0 20px;
   display: flex;
@@ -19,6 +19,22 @@
   background-color: darkgreen;
   width: 200px;
   height: 100vh;
+}
+.side-bar-header {
+  height: 100px;
+  padding: 0 20px;
+  background-color: #253141;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rooms{
+  height: calc(100vh - 100px);
+}
+.header-name a {
+  font-size: 16px;
+  color: #FAFAFA;
+  text-decoration: none;
 }
 .main-card {
   background-color: #FFF;
@@ -65,4 +81,42 @@ form input[type="submit"] {
 }
 form input[type="submit"]:hover {
   background-color: darkgreen;
+}
+.form {
+  background-color: #DDDDDD;
+  height: 90px;
+  padding: 20px 40px;
+  display: flex;
+}
+.form-input {
+  background-color: white;
+  display: flex;
+  width: 100%;
+}
+.form-message {
+  border: none;
+  height: 50px;
+  width: 100%;
+  padding-left: 10px;
+}
+.form-submit {
+  background-color: darkgreen;
+  border: none;
+  color: white;
+  font-size: 16px;
+  height: 50px;
+  margin-left: 15px;
+  padding: 0 20px;
+}
+.form-image {
+  font-size: 12px;
+  background-color: lightblue;
+  color: white;
+  padding: 12px;
+  width: 60px;
+  margin: 5px 10px;
+  text-align: center;
+}
+.hidden {
+  display: none;
 }
