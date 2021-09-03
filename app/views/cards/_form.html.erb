@@ -1,0 +1,10 @@
+<%= form_with model: @card, id: 'new_card', local: true do |f| %>
+  <%= f.text_field :comment, placeholder: 'type a comment' %>
+  <%= f.file_field :images, name: 'card[images][]', id: 'card_image' %>
+  <%= f.submit '送信' %>
+  <div id="image-list"></div>
+<% end %>
+
+<% @card.images.each do |image| %>
+  <%= image_tag image, class: 'images' %>
+<% end %>

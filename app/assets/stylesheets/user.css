@@ -24,7 +24,7 @@
 .account-page .account-page__header h2:after {
   content: "";
   display: block;
-  width: 150px;
+  width: 80px;
   margin-top: 5px;
   border-bottom: 1px solid darkgreen;
 }
@@ -36,8 +36,9 @@
 .account-page .account-page__header .btn {
   margin-top: 20px;
   color: #fff;
-  background-color: #ccc;
+  background-color: darkgreen;
   font-size: 14px;
+  border-radius: 5px;
 }
 .account-page .field {
   margin-bottom: 10px;
@@ -60,7 +61,7 @@
   display: inline-block;
   height: 50px;
   padding: 0 30px;
-  line-height: 50px;
+  line-height: 30px;
   letter-spacing: 1px;
   text-align: center;
   border: none;

@@ -1,5 +1,11 @@
 class CardsController < ApplicationController
+  before_action :set_card, only: [:edit, :update]
+
   def index
+    @cards = Card.all
+  end
+
+  def new
     @card = Card.new
   end
 
@@ -8,7 +14,18 @@ class CardsController < ApplicationController
     if @card.save
       redirect_to root_path
     else
-      render :index
+      render :new
+    end
+  end
+
+  def edit
+  end
+
+  def update
+    if @card.update(card_params)
+      redirect_to root_path
+    else
+      render :edit
     end
   end
 
@@ -20,6 +37,10 @@ class CardsController < ApplicationController
 
   private
   def card_params
-    params.require(:card).permit(:title, :comment, :image).merge(user_id: current_user.id)
+    params.require(:card).permit(:comment, images: []).merge(user_id: current_user.id)
+  end
+
+  def set_card
+    @card = Card.find(params[:id])
   end
 end

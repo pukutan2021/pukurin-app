@@ -1,32 +1,4 @@
-.header {
-  background-color: rgb(140, 221, 48);
-  height: 70px;
-  padding: 0 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
-.inner {
-  width: 200px;
-  font-size: 22px;
-  text-align: center;
-  float: left;
-}
-.user_nav {
-  padding: 5px 10px;
-  display: block;
-}
-.user_nav a {
-  text-decoration: none;
-  font-size: 15px;
-  border: 2px solid #253141;
-  border-radius: 3px;
-  color: #253141;
-  padding: 20px;
-  text-align: center;
-  margin: 10px;
-}
+
 .wrapper {
   display: flex;
 }
@@ -43,44 +15,53 @@
   justify-content: center;
   align-items: center;
 }
-.rooms{
+.inner {
+  color: #FFF;
+  font-size: 25px;
+  text-align: center;
+  float: left;
+}
+.rooms {
+  background-color: darkgreen;
   height: calc(100vh - 100px);
+  padding: 0 20px;
+}
+.room {
+  padding: 20px 0 40px;
 }
 .header-name a {
   font-size: 20px;
-  color: #FAFAFA;
+  color: white;
   text-decoration: none;
 }
 .main-card {
   background-color: #FFF;
-  height: calc(100vh - 100px - 70px);
+  height: calc(100vh - 100px);
   width: calc(100vw - 300px);
   margin-left: 40px;
+}
+.card-header {
+  background-color: #FFF;
+  height: 100px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  position: relative;
+}
+.header-button {
+  margin-top: 40px;
+}
+.header-button a {
+  text-decoration: none;
+  border: 1px solid darkgreen;
+  color: darkgreen;
+  padding: 20px;
 }
 .page-heading {
   color: darkgreen;
   font-size: 30px;
   margin-bottom: 30px;
-}
-.card__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-.card {
-  width: calc((100% - 50px) / 3);
-  margin-bottom: 40px;
-}
-.card__img {
-  margin-bottom: 20px;
-}
-.card__title {
-  font-size: 18px;
-  margin-bottom: 8px;
-}
-.card__summary {
-  font-size: 15px;
 }
 form input,
 form textarea {
@@ -92,7 +73,7 @@ form textarea {
   font-family: "游ゴシック", "YuGothic";
 }
 form input[type="submit"] {
-  width: 60%;
+  width: 50%;
   background-color: darkgreen;
   margin: 0 auto;
   border-radius: 20px;
@@ -114,12 +95,6 @@ form input[type="submit"]:hover {
   display: flex;
   width: 100%;
 }
-.form-message {
-  border: none;
-  height: 50px;
-  width: 100%;
-  padding-left: 10px;
-}
 .form-submit {
   background-color: darkgreen;
   border: none;
@@ -138,6 +113,8 @@ form input[type="submit"]:hover {
   margin: 5px 10px;
   text-align: center;
 }
-.hidden {
-  display: none;
+img {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
 }

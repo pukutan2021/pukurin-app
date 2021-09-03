@@ -1,44 +1,23 @@
-<div class="main-card">
-  <div class="card__top">
-    <h2 class="page-heading">写真一覧</h2>
-    <div class="card__wrapper">
-      <div class="card">
-        <%= image_tag @card.image.variant(resize: '120x120'), class: 'card-image' if @card.image.attached? %>
-        <div class="card__body">
-          <h2 class="card__title">タイトル</h2>
-          <p class="card__summary">
-            コメントが入ります。
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <%= image_tag card.image.variant(resize: '120x120'), class: 'card-image' if @card.image.attached? %>
-        <div class="card__body">
-          <h2 class="card__title">タイトル</h2>
-          <p class="card__summary">
-            コメントが入ります。
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <%= image_tag card.image.variant(resize: '120x120'), class: 'card-image' if @card.image.attached? %>
-        <div class="card__body">
-          <h2 class="card__title">タイトル</h2>
-          <p class="card__summary">
-            コメントが入ります。
-          </p>
-        </div>
-      </div>
+<div class="card-header">
+  <% if user_signed_in? %>
+    <div class="header-button">
+      <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+      <%= link_to "新規投稿", new_card_path %>
     </div>
-  </div>
+  <% else %>
+    <div class="header-button">
+      <%= link_to "ログイン", new_user_session_path, class: "post" %>
+      <%= link_to "新規登録", new_user_registration_path, class: "post" %>
+    </div>
+  <% end %>
 </div>
-<div class="form">
-  <div class="form-input">
-    <input class="form-message" placeholder= "type a message">
-    <label class="form-image">
-      <span class="image-file">画像</span>
-      <input type="file" class="hidden">
-    </label>
-  </div>
-  <input class="form-submit" type="submit" value="送信">
+<div class="main-card">
+  <% @cards.each do |card| %>
+    <%= card.comment%>
+    <div class="cards">
+      <% card.images.each do |image| %>
+        <%= image_tag image, class:'images' %>
+      <% end %>
+    </div>
+  <% end %>
 </div>
